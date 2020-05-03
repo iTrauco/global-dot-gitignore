@@ -74,3 +74,16 @@ log/
 node_modules
 npm-debug.log
 
+# PYTHON #
+##########
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Li]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+.venv
+venv/
+
