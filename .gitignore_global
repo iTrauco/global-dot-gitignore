@@ -1,51 +1,89 @@
-#=============================================================================
-# dark_powered.toml --- dark powered configuration example for SpaceVim
-# Copyright (c) 2016-2017 Wang Shidong & Contributors
-# Author: Wang Shidong < wsdjeg at 163.com >
-# URL: https://spacevim.org
-# License: GPLv3
-#=============================================================================
+# iTrauco's Global .gitignore #
+###############################
 
-# All SpaceVim option below [option] section
-[options]
-    # set spacevim theme. by default colorscheme layer is not loaded,
-    # if you want to use more colorscheme, please load the colorscheme
-    # layer
-    colorscheme = "onedark"
-    colorscheme_bg = "dark"
-    # Disable guicolors in basic mode, many terminal do not support 24bit
-    # true colors
-    enable_guicolors = true
-    # Disable statusline separator, if you want to use other value, please
-    # install nerd fonts
-    statusline_separator = "arrow"
-    statusline_inactive_separator = "arrow"
-    buffer_index_type = 4
-    enable_tabline_filetype_icon = true
-    enable_statusline_mode = false
-    filetree_direction = "left"
-# Enable autocomplete layer
-[[layers]]
-name = 'autocomplete'
-auto_completion_return_key_behavior = "smart"
-# auto_completion_tab_key_behavior = "smart"
+# TESTED OSs #
+##############
+# macOS Catalina v10.15.3
+# Ubuntu 20.04 x86_64
+# RHEL 8.1 x86_64
+# Kali Linux 2020.1b x86_64
 
-[[layers]]
-name = 'shell'
-default_position = 'bottom'
-default_height = 30
+# USE #
+#######
+# 1. Place a copy if this at ~/.gitignore_global
+# 2. Open terminal and run `git config --global core.excludesfile ~/.gitignore_global`
 
-[[layers]]
-  name = "lang#python"
-  python_file_head = [
-      '#!/usr/bin/env python3',
-      '# -*- coding: utf-8 -*-',
-      '',
-      ''
-  ]
+# COMPILED #
+############
+*.com
+*.class
+*.dll
+*.so
+*.pyc
+*.pyo
 
-[[layers]]
-  name = "colorscheme"
+# PACKAGES #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.msi
 
-[[layers]]
-  name = "git"
+# vi #
+######
+*~
+
+# LOGS/DB #
+######################
+log/
+*.log
+*.sql
+*.sqlite
+
+# OPERATING SYSTEM(OS) #
+########################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.Thumbs.db
+
+# TEMP files
+###################
+*.bak
+*.swp
+*.swo
+*~
+*#
+
+# IDE #
+#######
+.vscode
+.idea
+.iml
+*.sublime-workspace
+
+# JS/NODE #
+##########
+node_modules
+npm-debug.log
+
+# PYTHON #
+##########
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Li]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+.venv
+venv/
+
