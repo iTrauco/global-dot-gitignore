@@ -87,3 +87,8 @@ pyvenv.cfg
 .venv
 venv/
 
+# TERRAFORM #
+#############
+.terraform
+*.tfstate
+*.tfstate.backup
